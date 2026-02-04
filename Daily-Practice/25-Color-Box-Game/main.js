@@ -153,6 +153,7 @@ let hardColors = [
 let boxesContainer = document.getElementById("box-container");
 let headerBox = document.getElementById("header-box");
 let scoreDisplay = document.getElementById("score-display");
+let tryAgain = document.getElementsByClassName("try-again");
 let counter = 0;
 
 reset();
@@ -178,11 +179,11 @@ boxesContainer.addEventListener("click", colorPicker);
 function colorPicker(boxes) {
   if (boxes.target.style.backgroundColor === headerBox.style.backgroundColor) {
     scoreDisplay.innerText = ++counter;
+    tryAgain[0].innerText = '';
   } else {
     boxesContainer.innerText = "";
     reset();
     headerBoxColor();
-    let tryAgain = document.getElementsByClassName("try-again");
     tryAgain[0].id = "try-again";
     var randomMessage = Math.floor(Math.random() * failMessages.length);
     tryAgain[0].innerText = failMessages[randomMessage];
