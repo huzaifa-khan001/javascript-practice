@@ -80,109 +80,157 @@ main {
   animation: lefBoxesPan 1s ease;
   animation-fill-mode: both;
 }
+
 .box2 {
+  animation-delay: 0.2s;
   animation: lefBoxesPan 1.2s ease;
   animation-fill-mode: both;
 }
+
 .box3 {
-  animation: lefBoxesPan 1.4s ease;
+  animation: rightBoxesPan 1.4s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 1.4s ease;
 }
 .box4 {
-  animation: lefBoxesPan 1.6s ease;
+  animation: rightBoxesPan 1.6s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 1.6s ease;
 }
 .box5 {
+  animation-delay: 0.4s;
   animation: lefBoxesPan 1.8s ease;
   animation-fill-mode: both;
+  -webkit-animation: lefBoxesPan 1.8s ease;
 }
+
 .box6 {
-  animation: lefBoxesPan 2.0s ease;
+  animation-delay: 0.6s;
+  animation: lefBoxesPan 2s ease;
   animation-fill-mode: both;
 }
+
 .box7 {
-  animation: lefBoxesPan 2.1s ease;
+  animation: rightBoxesPan 2.1s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 2.1s ease;
 }
 .box8 {
-  animation: lefBoxesPan 2.2s ease;
+  animation: rightBoxesPan 2.2s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 2.2s ease;
 }
 .box9 {
+  animation-delay: 0.8s;
   animation: lefBoxesPan 2.3s ease;
   animation-fill-mode: both;
+  -webkit-animation: lefBoxesPan 2.3s ease;
 }
+
 .box10 {
+  animation-delay: 1s;
   animation: lefBoxesPan 2.4s ease;
   animation-fill-mode: both;
+  -webkit-animation: lefBoxesPan 2.4s ease;
 }
+
 .box11 {
-  animation: lefBoxesPan 2.5s ease;
+  animation: rightBoxesPan 2.5s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 2.5s ease;
 }
 .box12 {
   animation: lefBoxesPan 2.6s ease;
   animation-fill-mode: both;
+  -webkit-animation: lefBoxesPan 2.6s ease;
 }
 .box13 {
+  animation-delay: 1.2s;
   animation: lefBoxesPan 2.7s ease;
   animation-fill-mode: both;
+  -webkit-animation: lefBoxesPan 2.7s ease;
 }
+
 .box14 {
-  animation: lefBoxesPan 2.8s ease;
+  animation-delay: 1.4s;
+  animation: rightBoxesPan 2.8s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 2.8s ease;
 }
+
 .box15 {
-  animation: lefBoxesPan 2.9s ease;
+  animation: rightBoxesPan 2.9s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 2.9s ease;
 }
 .box16 {
-  animation: lefBoxesPan 3.0s ease;
+  animation: lefBoxesPan 3s ease;
   animation-fill-mode: both;
+  -webkit-animation: lefBoxesPan 3s ease;
 }
 .box17 {
+  animation-delay: 1.6s;
   animation: lefBoxesPan 3.1s ease;
   animation-fill-mode: both;
+  -webkit-animation: lefBoxesPan 3.1s ease;
 }
+
 .box18 {
-  animation: lefBoxesPan 3.2s ease;
+  animation-delay: 1.8s;
+  animation: rightBoxesPan 3.2s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 3.2s ease;
 }
+
 .box19 {
-  animation: lefBoxesPan 3.3s ease;
+  animation: rightBoxesPan 3.3s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 3.3s ease;
 }
 .box20 {
   animation: lefBoxesPan 3.4s ease;
   animation-fill-mode: both;
+  -webkit-animation: lefBoxesPan 3.4s ease;
 }
 .box21 {
+  animation-delay: 2s;
   animation: lefBoxesPan 3.5s ease;
   animation-fill-mode: both;
+  -webkit-animation: lefBoxesPan 3.5s ease;
 }
+
 .box22 {
-  animation: lefBoxesPan 3.6s ease;
+  animation-delay: 2.2s;
+  animation: rightBoxesPan 3.6s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 3.6s ease;
 }
+
 .box23 {
-  animation: lefBoxesPan 3.7s ease;
+  animation: rightBoxesPan 3.7s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 3.7s ease;
 }
 .box24 {
   animation: lefBoxesPan 3.8s ease;
   animation-fill-mode: both;
 }
 .box25 {
+  animation-delay: 2.4s;
   animation: lefBoxesPan 3.9s ease;
   animation-fill-mode: both;
 }
+
 .box26 {
-  animation: lefBoxesPan 4.0s ease;
+  animation-delay: 2.6s;
+  animation: rightBoxesPan 4s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 4s ease;
 }
 .box27 {
-  animation: lefBoxesPan 4.1s ease;
+  animation: rightBoxesPan 4.1s ease;
   animation-fill-mode: both;
+  -webkit-animation: rightBoxesPan 4.1s ease;
 }
 .box28 {
   animation: lefBoxesPan 4.2s ease;
@@ -201,6 +249,22 @@ main {
   }
 }
 
+@keyframes rightBoxesPan {
+  from {
+    transform: translateX(1000px);
+    opacity: 0.2;
+    -webkit-transform: translateX(1000px);
+    -moz-transform: translateX(1000px);
+    -ms-transform: translateX(1000px);
+    -o-transform: translateX(1000px);
+}
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 #try-again {
   font-size: 1.5em;
   font-weight: bold;
@@ -211,10 +275,10 @@ main {
 }
 
 @keyframes pop-up {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

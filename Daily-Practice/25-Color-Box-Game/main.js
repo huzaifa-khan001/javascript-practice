@@ -170,7 +170,7 @@ function reset() {
     var randomColor = Math.floor(Math.random() * colors.length);
     boxesContainer.appendChild(boxes);
     boxes.style.backgroundColor = colors[randomColor];
-    boxes.classList.add('box' + i);
+    boxes.classList.add("box" + i);
   }
 }
 
@@ -179,7 +179,7 @@ boxesContainer.addEventListener("click", colorPicker);
 function colorPicker(boxes) {
   if (boxes.target.style.backgroundColor === headerBox.style.backgroundColor) {
     scoreDisplay.innerText = ++counter;
-    tryAgain[0].innerText = '';
+    tryAgain[0].innerText = "";
   } else {
     boxesContainer.innerText = "";
     reset();
