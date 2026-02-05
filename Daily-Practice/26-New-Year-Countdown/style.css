@@ -4,13 +4,10 @@
     box-sizing: border-box;
 }
 
-html, body{
+html{
     height: 100%;
+    width: 100%;
     background-color: gray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 body {
@@ -19,8 +16,9 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  font-size: 1.5em;
   justify-content: center;
-  font-family: cursive;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: slateblue;
   overflow: hidden;
 }
@@ -30,6 +28,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
+  font-size: 2em;
 }
 
 .year {
