@@ -257,7 +257,7 @@ main {
     -moz-transform: translateX(1000px);
     -ms-transform: translateX(1000px);
     -o-transform: translateX(1000px);
-}
+  }
 
   to {
     transform: translateX(0px);

@@ -34,7 +34,7 @@ let failMessages = [
   "Maybe try a game with bigger boxes... like 'Exit to Desktop'. 🖥️🚪",
   "I’ve calculated 14 million futures, and you fail in all of them. ⏳🌌",
   "This game is easy. The problem is definitely sitting in your chair. 🪑🤡",
-  "Your perception is about as sharp as a bowling ball. 🎳🌑",
+  "Your perception is about as sharp as a bowling ball. Bowling ball. 🎳🌑",
   "Please stop. The server is getting embarrassed for you. 😳💻",
   "Do you need a tutorial on how to use a mouse? 🖱️❓",
   "Even Internet Explorer is faster at processing colors than you. 🌐🐢",
@@ -164,6 +164,7 @@ function headerBoxColor() {
 }
 
 function reset() {
+  headerBoxColor(); // Fixed the empty box at start by calling this here
   for (var i = 1; i <= 28; i++) {
     var boxes = document.createElement("div");
     boxes.className = "game-box";
