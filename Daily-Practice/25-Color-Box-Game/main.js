@@ -164,7 +164,7 @@ function headerBoxColor() {
 }
 
 function reset() {
-  headerBoxColor(); // Fixed the empty box at start by calling this here
+  headerBoxColor(); // Fixed the empty box at start bug by calling this here
   for (var i = 1; i <= 28; i++) {
     var boxes = document.createElement("div");
     boxes.className = "game-box";
@@ -181,6 +181,8 @@ function colorPicker(boxes) {
   if (boxes.target.style.backgroundColor === headerBox.style.backgroundColor) {
     scoreDisplay.innerText = ++counter;
     tryAgain[0].innerText = "";
+    boxesContainer.innerText = "";
+    reset();
   } else {
     boxesContainer.innerText = "";
     reset();
