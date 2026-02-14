@@ -12,8 +12,7 @@ function characterCounter() {
   remainingCharDisplay.classList.remove("remaining-char");
   totalCharDisplay.classList.remove("total-char");
   setTimeout(function() {
-      remainingCharDisplay.classList.add("remaining-char");
-      totalCharDisplay.classList.add("total-char");
+      remainingCharDisplay.classLifdd("total-char");
   }, 10)
   totalCharDisplay.innerText = charactersTyped.value.length;
   remainingCharDisplay.innerText = totalChar - charactersTyped.value.length;
